@@ -1,0 +1,527 @@
+/* ----------GLOBAL STYLES-----------  */
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto-Regular.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+#hero,
+#statistics,
+#technology,
+#speed,
+#pricing,
+#testimonials,
+#download,
+footer {
+  padding: 100px 0;
+}
+
+.nav__wrapper,
+.nav__list,
+.nav__list ul,
+.hero__wrapper,
+.statistics__wrapper,
+.dark__mode__icons,
+.technology__wrapper,
+.speed__wrapper,
+.pricing__wrapper,
+.testimonials__wrapper,
+.wrapper {
+  display: flex;
+}
+
+.btn {
+  padding: 10px 25px;
+  background-color: #222222;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  border-color: #0000;
+}
+
+.btn:hover {
+  background-color: #d23166;
+  overflow: hidden;
+  border-color: #d23166;
+  transition: all 0.5s;
+}
+
+.hero__img,
+.technology__img,
+.speed__img,
+.dark__mode__img {
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.main__img {
+  width: 100%;
+  transition: all 1s;
+  height: 100%;
+}
+
+.main__img:hover {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+/*--------------- header-------------  */
+
+/* ---------------NAV BAR-------------- */
+
+nav {
+  box-shadow: 0px 3px 15px 0px #00000026;
+  height: 90px;
+  align-items: center;
+}
+.nav__wrapper {
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.nav__list {
+  gap: 32px;
+}
+
+.nav__list ul {
+  gap: 32px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav__list ul a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #666666;
+}
+
+.nav__list li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: transparent;
+  position: relative;
+  top: 2px;
+  transition: all 0.5s;
+}
+
+.nav__list li:hover::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #fa4659;
+  position: relative;
+  top: 2px;
+}
+
+/* -------------HERO SECTION------------ */
+
+.hero__wrapper {
+  flex-wrap: wrap;
+  gap: 207px;
+}
+
+.hero__content,
+.hero__img {
+  width: calc(50% - 103.5px);
+}
+
+.hero__content {
+  padding: 47px 0 47px 78px;
+}
+
+.hero__content img {
+  width: 192px;
+  height: 64px;
+  margin-bottom: 11px;
+}
+
+.hero__content h1 {
+  font-size: 54px;
+  font-weight: 400;
+  line-height: 59.4px;
+  text-align: left;
+  color: #222222;
+}
+
+.hero__content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #222222;
+  margin: 20px 0;
+}
+
+.hero__content button {
+  margin-left: 5px;
+}
+
+/* -------------MAIN-------------------  */
+
+/* -------------STATISTICS SECTION------------  */
+
+#statistics {
+  background-color: #ff5437;
+  height: 316px;
+}
+
+.statistics__wrapper {
+  gap: 120px;
+}
+
+.statistics__analyzed,
+.statistics__operations,
+.statistics__accuracy {
+  width: calc(33.3% - 80px);
+  padding: 0 43px;
+  height: 116px;
+}
+
+#statistics h2 {
+  font-size: 95px;
+  font-weight: 400;
+  line-height: 96px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#statistics p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* -----------------TECHNOLOGY SECTION---------------  */
+
+.technology__wrapper,
+.speed__wrapper {
+  gap: 176px;
+}
+
+.technology__info,
+.technology__img,
+.speed__info,
+.speed__img {
+  width: calc(50% - 88px);
+}
+
+.technology__info,
+.speed__info {
+  padding: 78px;
+}
+
+.technology__info h2,
+.speed__info h2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #222222;
+}
+
+.technology__info h3,
+.speed__info h3 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  color: #222222;
+  margin: 5px 0 15px 0;
+}
+
+.technology__info p,
+.speed__info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #666666;
+}
+
+#speed {
+  background-color: #f2f2f2;
+}
+
+/* ------------DARK MODE SECTION--------------  */
+
+#dark__mode {
+  background-color: #222222;
+  color: #ffffff;
+  align-items: center;
+}
+
+.dark__mode__wrapper {
+  text-align: center;
+  margin: auto;
+  width: 600px;
+  padding: 100px 0;
+}
+
+.light__mode,
+.dark__mode {
+  margin: auto;
+}
+
+.dark__mode__info span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.dark__mode__info h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  margin: 5px 0 15px 0;
+}
+
+.dark__mode__info p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.dark__mode__img {
+  overflow: hidden;
+  width: 494px;
+  margin: auto;
+  margin-top: 66px;
+}
+
+.main__img__with__border__bottom {
+  border-bottom: 4px solid #ffffff;
+}
+
+.dark__mode__icons {
+  padding: 42px 164px;
+  gap: 20px;
+}
+
+.dark__mode__icons span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+}
+
+.dark__mode__icons button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+/* -------------PRICING SECTION-------------  */
+
+.pricing__info,
+.testimonials__info,
+.download__info {
+  text-align: center;
+  /* padding-bottom: 40px; */
+  width: 600px;
+  margin: auto;
+}
+
+.pricing__info h3,
+.testimonials__info h3,
+.download__info h3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: #222222;
+}
+
+.pricing__info h2,
+.testimonials__info h2,
+.download__info h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #222222;
+}
+
+.pricing__info p,
+.testimonials__info p,
+.download__info p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 14px;
+  color: #666666;
+}
+
+.pricing__wrapper,
+.testimonials__wrapper {
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 40px 16px 0 16px;
+}
+
+.pricing__standard,
+.pricing__premium,
+.pricing__lifetime,
+.testimonials__pam__card,
+.testimonial__michael__card,
+.testimonial__angels__card {
+  width: calc(33.3% - 10px);
+  background-color: #f2f2f2;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.pricing__wrapper h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.pricing__wrapper h3 {
+  font-size: 108px;
+  font-weight: 400;
+  line-height: 124px;
+  letter-spacing: 8px;
+}
+
+.pricing__wrapper p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: #222222;
+  margin: 25px 0 20px 0;
+}
+
+.pricing__standard {
+  color: #0278ed;
+}
+
+.pricing__standard__btn {
+  background-color: #0278ed;
+  margin-bottom: 50px;
+}
+
+.pricing__premium {
+  color: #ff5437;
+}
+
+.pricing__premium__btn {
+  background-color: #ff5437;
+}
+
+.pricing__lifetime {
+  color: #ff9209;
+}
+
+.pricing__lifetime__btn {
+  background-color: #ff9209;
+}
+
+#testimonials,
+footer {
+  background-color: #f2f2f2;
+}
+
+.testimonials__pam__card,
+.testimonial__michael__card,
+.testimonial__angels__card {
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.testimonials__wrapper p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #222222;
+}
+
+.wrapper {
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.wrapper span {
+  display: block;
+  text-align: left;
+  font-weight: 400;
+  color: #1b1a1a;
+  line-height: 20px;
+}
+
+.first__name {
+  font-size: 16px;
+}
+
+.dunder {
+  font-size: 14px;
+}
+
+.download__info a img {
+  margin-top: 26px;
+}
+
+/* ------------------FOOTER------------------  */
+
+.footer__wrapper {
+  text-align: center;
+}
+
+.footer__icons {
+  margin: 26px 0;
+  text-align: center;
+}
+
+.twitter__icon,
+.instagram__icon {
+  margin-right: 20px;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #b1b1b1;
+}
+
+footer p span {
+  color: #666666;
+}
